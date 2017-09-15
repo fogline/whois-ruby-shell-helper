@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    colorize (0.8.1)
+    whois (4.0.4)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  colorize
+  whois
+
+BUNDLED WITH
+   1.15.4

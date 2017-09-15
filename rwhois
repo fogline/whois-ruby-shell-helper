@@ -1,0 +1,20 @@
+#!/path/to/rubybinary/or/rvm/wrapper/goes/here
+
+require 'whois'
+require 'colorize'
+
+if ARGV[0].nil?
+  puts "Please enter a valid domain name"
+ exit
+end
+
+domain = ARGV[0]
+
+begin
+  outwhois = Whois.whois(domain)
+  puts "#{outwhois}".cyan
+rescue => exception
+  e = exception
+  puts "#{e}".light_red
+end
+
